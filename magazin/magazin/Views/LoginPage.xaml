@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="magazin.Views.LoginPage"
+             Title="Вход"
+             Padding="10,20,20,10"
+             >
+  <StackLayout>
+    <Label Text="Введите логин"/>
+    <Entry Text="{Binding UserName}"/>
+    <Label Text="Пароль"/>
+    <Entry Text="{Binding Password}" IsPassword="True"/>
+    <Button Text="Войти"
+            Command="{Binding LoginCommand}"/>
+  </StackLayout>
+</ContentPage>
